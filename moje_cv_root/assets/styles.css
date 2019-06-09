@@ -1,0 +1,131 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.my-project {
+    margin-bottom: 1.5rem;
+    height: 15rem;
+    display: block;
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.my-project img {
+    max-width: 105%;
+    max-height: 105%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.technology-icon {
+    display: inline-block;
+    text-align: center;
+    margin: 5px 30px;
+    transition-duration: 86ms;
+}
+
+.my-item {
+    padding-bottom: 0.75rem;
+}
+
+.my-item-card {
+    box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 0px rgba(10, 10, 10, .1);
+}
+
+.my-hoverable {
+    transition-property: box-shadow, -webkit-transform;
+    transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform, -webkit-transform;
+    will-change: box-shadow, transform;
+    position: relative;
+    transition: all .2s;
+}
+
+.my-hoverable:hover {
+    transition-property: box-shadow, -webkit-transform;
+    transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform, -webkit-transform;
+    will-change: box-shadow, transform;
+    transition: all .2s;
+    transform: translate(0, -5px);
+}
+
+#my_typing {
+    border-right: .10em solid white;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+.my-shadow {
+    box-shadow: inset 0 -6px 0 rgba(255, 74, 110, .2);
+}
+
+.my-red {
+    color: #ff3860;
+}
+
+.my-red:hover {
+    color: #ff3860;
+}
+
+.my-has-text-centered {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.my-item-under-text .hidden-item {
+    background: white;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+}
+
+.my-item-car:hover .hidden-item {
+    opacity: .93;
+    transition: opacity .5s;
+}
+
+.my-link-as-text {
+    color:#4a4a4a;
+}
