@@ -27,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view),
     path('product/', product_detail_view),
+
 ]
 
 if settings.DEBUG:
