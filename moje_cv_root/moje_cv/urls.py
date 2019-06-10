@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
-from products.views import product_detail_view
+
 from pages.views import home_view
 
 print(staticfiles_urlpatterns())
@@ -26,7 +26,7 @@ print(staticfiles_urlpatterns())
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view),
-    path('product/', product_detail_view),
+
 
 ]
 

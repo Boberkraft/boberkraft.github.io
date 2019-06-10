@@ -4,7 +4,7 @@ body {
 }
 
 .my-project {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     height: 15rem;
     display: block;
     overflow: hidden;
@@ -118,10 +118,13 @@ body {
     left: 0;
     position: absolute;
     padding: 0;
+    opacity: 0.05;
     transition: opacity .5s;
+
 }
 
-.my-item-car:hover .hidden-item {
+.my-item-car:hover  .hidden-item {
+
     opacity: .93;
     transition: opacity .5s;
 }

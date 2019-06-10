@@ -90,6 +90,24 @@
 
     }
     start_typing();
-</script>
 
+</script>
+<script>
+    function activate_link(id) {
+        setTimeout(function () {
+
+            let el = document.getElementById(id);
+
+            el.setAttribute('href', el.getAttribute("data-hidden-url"));
+        },100);
+    }
+    function deactivate_link(id) {
+        setTimeout(function () {
+
+            let el = document.getElementById(id);
+            el.removeAttribute('href');
+        },0);
+    }
+
+</script>
 </body>

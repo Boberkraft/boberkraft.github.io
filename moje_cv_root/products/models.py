@@ -12,6 +12,11 @@ class Product(models.Model):
     stack = models.CharField(blank=True, max_length=300)
     visible = models.BooleanField(default=True)
 
+
+    def get_image(self, *args, **kwargs):
+        print('XDDDD')
+        return "23"
+
     def set_stack(self, x):
         self.stack = json.dumps(x)
 

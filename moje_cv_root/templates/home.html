@@ -14,8 +14,7 @@
                 </h1>
                 <h3 class="subtitle is-3 has-text-justified has-text-weight-light">
                     Z tej strony
-                    <strong>Andrzej</strong>, początkujący programista
-                    , który dodatkowo interesuje się UX oraz czystym kodem <i class="em em-male-technologist"></i>
+                    <strong>Andrzej</strong>, początkujący programista, który dodatkowo interesuje się UX oraz czystym kodem <i class="em em-male-technologist"></i>
                 </h3>
                 <h4 class="subtitle is-4 has-text-weight-light">
                     Dodatkowo jestem również <strong>teleinformatykiem</strong>.
@@ -48,69 +47,69 @@
         <div class="container">
 
             <h2 class="title is-4">
-                <span class="my-shadow">Korzystałem z technologii:</span>
+                <span class="my-shadow">Korzystałem z tych technologii</span>
             </h2>
 
             <div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-python.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-python.png" alt="python" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-numpy.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-numpy.png" alt="numpy" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-django.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-django.png" alt="django" width="144"
                          height="95">
                 </div>
 
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-haxe.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-haxe.png" alt="haxe" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-css-html.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-css-html.png" alt="css html" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-js.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-js.png" alt="js" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-lisp.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-lisp.png" alt="common lisp" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-emacs.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-emacs.png" alt="emacs" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-unity.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-unity.png" alt="unity" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-labview.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-labview.png" alt="labview" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-cpp.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-cpp.png" alt="cpp" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-arduino.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-arduino.png" alt="arduino" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-ps.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-ps.png" alt="Photoshop" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-linux.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-linux.png" alt="Linux" width="144"
                          height="95">
                 </div>
                 <div class="technology-icon">
-                    <img class="alignnone size-full" src="/static/t-github.png" alt="technologie_1" width="144"
+                    <img class="image " src="/static/t-github.png" alt="Github" width="144"
                          height="95">
                 </div>
             </div>
@@ -136,10 +135,10 @@
                         <div class="my-item">
                             <div class="my-item-under-text" style="position:relative;">
                                 <a class="my-project">
-                                    <img src="/static/ {{ object.image }}">
+                                    <img alt="{{ object.title }} obrazek" src="/static/{{ object.image|get_image }}">
                                 </a>
                                 <div class="hidden-item">
-                                    <a class="my-link-as-text" href="{{ object.url }}" target="_blank" rel="nofollow">
+                                    <a id="{{ object.id }}" onmouseover="activate_link('{{ object.id }}')" onmouseenter="deactivate_link('{{ object.id }}')" class="my-link-as-text" data-hidden-url="{{ object.url }}" target="_blank" rel="nofollow">
                                         <div class="notification" style="height:100%;">
                                             <div class="content my-has-text-centered">
                                                 {{ object.description|safe }}
@@ -148,9 +147,9 @@
                                     </a>
                                 </div>
                             </div>
-                            <h2 class="title is-5 is-marginless">
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
                                 {{ object.title }}
-                            </h2>
+                            </h2></p>
 
                             <p>
                                 {% for tech in object|get_stack %}
