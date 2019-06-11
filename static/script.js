@@ -57,18 +57,24 @@ function start_typing() {
 
 }
 start_typing();
+
+
+
 function activate_link(id) {
+    let el = document.getElementById(id);
+    el.setAttribute('data-edited', '1');
     setTimeout(function () {
+        if (el.getAttribute("data-edited") === "1") {
+            el.setAttribute('href', el.getAttribute("data-hidden-url"));
+//            console.log(`OK dla ${id}`);
+        }
 
-        let el = document.getElementById(id);
-
-        el.setAttribute('href', el.getAttribute("data-hidden-url"));
-    },1500);
+    },300);
 }
 function deactivate_link(id) {
-    setTimeout(function () {
-
         let el = document.getElementById(id);
+        el.setAttribute('data-edited', '2');
         el.removeAttribute('href');
-    },0);
+//        console.log(`NIE dla ${id}`);
+
 }
