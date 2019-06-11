@@ -63,7 +63,7 @@ function activate_link(id) {
         let el = document.getElementById(id);
 
         el.setAttribute('href', el.getAttribute("data-hidden-url"));
-    },100);
+    },1500);
 }
 function deactivate_link(id) {
     setTimeout(function () {
