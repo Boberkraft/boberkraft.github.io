@@ -13,10 +13,6 @@ class Product(models.Model):
     visible = models.BooleanField(default=True)
 
 
-    def get_image(self, *args, **kwargs):
-        print('XDDDD')
-        return "23"
-
     def set_stack(self, x):
         self.stack = json.dumps(x)
 
