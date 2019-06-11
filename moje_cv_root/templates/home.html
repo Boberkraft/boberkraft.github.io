@@ -26,11 +26,10 @@
         </div>
         <div class="columns is-centered">
             <div class="column is-2">
-                <a class="button is-medium is-danger" href=""
-                   class="action is-primary">Résumé</a>
+                <a class="button is-medium is-danger" href="https://github.com/Boberkraft/boberkraft.github.io/cv Andrzej Bisewski.pdf">Résumé</a>
             </div>
             <div class="column is-2">
-                <a class="button is-medium is-dark" href="#contact">Kontakt</a>
+                <a class="button is-medium is-dark" href="mailto:andrzej.bisewski@gmail.com">Kontakt</a>
             </div>
         </div>
     </div>
@@ -51,67 +50,16 @@
             </h2>
 
             <div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-python.png" alt="python" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-numpy.png" alt="numpy" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-django.png" alt="django" width="144"
-                         height="95">
-                </div>
+                {% with 'python numpy django haxe css-html js lisp emacs unity labview cpp arduino ps linux github' as list %}
 
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-haxe.png" alt="haxe" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-css-html.png" alt="css html" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-js.png" alt="js" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-lisp.png" alt="common lisp" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-emacs.png" alt="emacs" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-unity.png" alt="unity" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-labview.png" alt="labview" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-cpp.png" alt="cpp" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-arduino.png" alt="arduino" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-ps.png" alt="Photoshop" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-linux.png" alt="Linux" width="144"
-                         height="95">
-                </div>
-                <div class="technology-icon">
-                    <img class="image " src="/static/t-github.png" alt="Github" width="144"
-                         height="95">
-                </div>
+                    {% for tech in list.split %}
+                    <div class="technology-icon">
+                        <img class="image " src="/static/{{ tech }}.png" alt="obrazek {{ tech }}" width="144"
+                             height="95">
+                    </div>
+                    {% endfor %}
+                {% endwith %}
+
             </div>
 
 
@@ -187,7 +135,7 @@
                 <p class="content is-medium">
                     Zainteresowany współpracą? Śmiało pisz na
 
-                    <a class="my-red" href="mailto:andrzej.bisewski@gmail.com " target="_blank">andrzej.bisewski@gmail.com</a>,
+                    <a class="my-red" href="mailto:andrzej.bisewski@gmail.com" target="_blank">andrzej.bisewski@gmail.com</a>,
                     a zaraz do Ciebie odpiszę!
                 </p>
                 <br>

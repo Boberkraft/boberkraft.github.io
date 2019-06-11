@@ -118,14 +118,14 @@ body {
     left: 0;
     position: absolute;
     padding: 0;
-    opacity: 0.05;
+    opacity: 0;
     transition: opacity .5s;
 
 }
 
 .my-item-car:hover  .hidden-item {
 
-    opacity: .93;
+    opacity: 0.93;
     transition: opacity .5s;
 }
 
