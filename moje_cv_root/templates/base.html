@@ -50,7 +50,7 @@
         {% if language.code == default_language %}
         <a class="button is-danger" href="/">{{ language.name_local|capfirst }}</a>
         {% else %}
-        <a class="button is-danger" href="/{{ language.code }}/">{{ language.name_local|capfirst }}</a>
+        <a class="button is-danger" href="/{{ language.code }}">{{ language.name_local|capfirst }}</a>
         {% endif %}
         {% endif %}
         {% endfor %}
