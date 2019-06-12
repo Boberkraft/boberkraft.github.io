@@ -174,7 +174,8 @@
                                          src="/static/{{ object.image|get_image }}">
                                 </a>
                                 <div class="hidden-item">
-                                    <a id="{{ object.id }}"  class="my-link-as-text"
+                                    <a id="{{ object.id }}" onmouseenter="activate_link('{{ object.id }}')"
+                                       onmouseleave="deactivate_link('{{ object.id }}')" class="my-link-as-text"
                                        data-hidden-url="{{ object.url }}" target="_blank" rel="nofollow">
                                         <div class="notification" style="height:100%;">
                                             <div class="content my-has-text-centered">
