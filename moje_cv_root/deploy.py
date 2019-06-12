@@ -2,9 +2,9 @@ import os
 import requests
 from distutils.dir_util import copy_tree
 import os
-from moje_cv.settings import LANGUAGES
+from moje_cv.settings import LANGUAGES, LANGUAGE_CODE
 
-default_language = "pl"
+
 
 for code, language in LANGUAGES:
     site = requests.get(os.path.join("http://127.0.0.1:8000/", code)).text
@@ -13,8 +13,8 @@ for code, language in LANGUAGES:
         print("Writting", code, "site")
         ff.write(site)
 
-print("renaming", "../{}.html".format(default_language), "to ../index.html")
-os.replace("../{}.html".format(default_language), "../index.html")
+print("renaming", "../{}.html".format(LANGUAGE_CODE), "to ../index.html")
+os.replace("../{}.html".format(LANGUAGE_CODE), "../index.html")
 
 print("Copying assets...")
 copy_tree("assets", "../static")
