@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio | Andrzej Bisewski</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Programista dopiero zaczynający swoją karierę.">
+
+    <meta property="og:url" content="https://bisewski.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio | Andrzej Bisewski">
+
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="og:description" content="Programista dopiero zaczynający swoją karierę.">
+    <meta property="og:image" content="/static/og-image.png"/>
+    <!--https://developers.facebook.com/tools/debug/sharing/?q=bisewski.dev-->
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/bulma.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
+    <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
+
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.ico"/>
+</head>
+<body>
+
+<div class="hero-body" style="background-color:#ff3860; margin-top:4rem;">
+    <div class="container has-text-centered">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h3 class="subtitle is-3 has-text-justified has-text-weight-light">
+                    <strong style="color:white;">Poszukujesz</strong><br>
+                    <strong style="color:black;height=2rem;" id="my_typing"></strong>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="hero-body">
+    <div class="container has-text-centered">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="subtitle is-2 has-text-weight-light">
+                    <span style="icon ">
+                        ‍<i class="em em-writing_hand" style></i>
+                    </span>
+                </h1>
+                <h3 class="subtitle is-3 has-text-justified has-text-weight-light">
+                    Z tej strony
+                    <strong>Andrzej</strong>, początkujący programista, który dodatkowo interesuje się rozwojem i czystym kodem <i class="em em-male-technologist"></i>
+                </h3>
+                <h4 class="subtitle is-4 has-text-weight-light">
+                    Dodatkowo jestem również <strong>teleinformatykiem</strong>.
+                </h4>
+                <span class="icon">
+                    <i class="fas fa-home"></i>
+                </span>
+            </div>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-2">
+                <a class="button is-medium is-danger" href="/static/CV%20Andrzej%20Bisewski.pdf">Résumé</a>
+            </div>
+            <div class="column is-2">
+                <a class="button is-medium is-dark" href="mailto:andrzej.bisewski@gmail.com">Kontakt</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hr">
+    <div class="container">
+        <hr>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+
+            <h2 class="title is-4">
+                <span class="my-shadow">Korzystałem z tych technologii</span>
+            </h2>
+
+            <div>
+                
+
+                    
+                 
+                
+
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!--itemki-->
+<div>
+    <div class="section">
+        <div class="container">
+            <h2 class="title is-4">
+                <span class="my-shadow"><strong>Fun</strong> stuff</span>
+            </h2>
+            <div class="columns">
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="Rozwiązywacz sapera obrazek" src="/static/saper.gif">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="1" onmouseenter="activate_link('1')" onmouseleave="deactivate_link('1')" class="my-link-as-text" data-hidden-url="https://github.com/Boberkraft/minesweeper-solver" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong class="is-medium">Program samemu roziązuje każdego sapera</strong></p>
+
+<p>Robi zrzut ekranu, analizuje grę i dzięki algebrze liniowej wie gdzie kliknąć, by nie trafić na mine.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                Rozwiązywacz sapera
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">Python</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Tkinter</span>
+                                
+                                <span class="tag is-white has-text-grey-light">NumPy</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Algorytmy</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="Tetris obrazek" src="/static/tetris.gif">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="2" onmouseenter="activate_link('2')" onmouseleave="deactivate_link('2')" class="my-link-as-text" data-hidden-url="https://github.com/Boberkraft/tetris" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong>Klasyczny tetris wieloosobowy</strong></p>
+
+<p class="is-size-7">Gra docelowo ma wspierać rozgrywkę wieloosobową przez internet</p>
+
+<p class="is-size-7">Stworzony w celu zgłębienia tajniki <strong>Common Lispa </strong> - ucze się go, gdyż przeczytałem, że każdy programista <strong>musi</strong> go poznać. Czy jestem w stanie zobaczyć <em>rewolucyjność</em> tego języka? Zdecydowanie tak.<p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                Tetris
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">Common lisp</span>
+                                
+                                <span class="tag is-white has-text-grey-light">OpenGL</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="columns">
+                
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="Samotnik obrazek" src="/static/brainvita.gif">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="3" onmouseenter="activate_link('3')" onmouseleave="deactivate_link('3')" class="my-link-as-text" data-hidden-url="https://github.com/Boberkraft/BrainVita-Haxe" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong>Gra logiczna</strong></p>
+
+<p class="is-size-7-touch">Celem gry jest zostawienie na planszy jak najmniejszej liczby pionków. Pionka bije się przeskakując go w pionie lub w poziomie.</p>
+
+<p class="is-size-7-touch">Pierwszy mój projekt w wieloplatformowym języku <strong>Haxe</strong>. Podobną grę zrobiłem w Pythonie, to pomyślałem, że porównam proces tworzenia tego samego przy użyciu innych narzędzi.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                Samotnik
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">Haxe</span>
+                                
+                                <span class="tag is-white has-text-grey-light">HaxeFlixel</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Android</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="Algorytmy i struktury danych obrazek" src="/static/algorytmy.png">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="4" onmouseenter="activate_link('4')" onmouseleave="deactivate_link('4')" class="my-link-as-text" data-hidden-url="https://github.com/Boberkraft/Data-Structures-and-Algorithms-in-Python" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong>Rozwiązania do zadań czysto algorytmicznych</strong></p>
+
+<p class="is-size-7-touch">Repozytorium to zbiór odpowiedzi do każdego przerobionego przezemnie działu ksiązki</p>
+
+<p class="is-size-7" >Znajduje się tam: OOP, rekurencja, złożoność obliczeniowa, dowodzenie matematyczne, analiza, algorytmy sortujące, Dynamic Array, Stacks, Deques, Linked lists, Trees, Priority Queues, Heaps, Hash Tables, Skip Lists</p>
+
+<p class="is-size-7-touch"> Przerobiłem ponad <strong>420 </strong> zadań z tej książki.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                Algorytmy i struktury danych
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">Python</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Algorytmy</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="columns">
+                
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="Rozwiązywacz sudoku obrazek" src="/static/sudoku.gif">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="5" onmouseenter="activate_link('5')" onmouseleave="deactivate_link('5')" class="my-link-as-text" data-hidden-url="https://github.com/Boberkraft/" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong class="is-medium">Program samemu roziązuje każde sudoku</strong></p>
+
+<p class="is-size-7-touch">Przy okazji pozwala w łatwy sposób zrozumieć w jaki sposób działa, gdyż posiada ładny interfejs pozwalający wykonywać operacje algorytmu krok po kroku.</p>
+
+<p class="is-size-7-touch">Stworzyłem go w celach nauki <strong>rekurencji</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                Rozwiązywacz sudoku
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">Python</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Tkinter</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Algorytmy</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="Algorytmy sortujące obrazek" src="/static/selectionsort.gif">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="6" onmouseenter="activate_link('6')" onmouseleave="deactivate_link('6')" class="my-link-as-text" data-hidden-url="https://github.com/Boberkraft/algorithm-visualization-in-haxe" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong>Ładna prezentacja algorytmów sortujących</strong></p>
+
+<p class="is-size-7-touch">Jest to strona internetowa, która w wolny sposób-  krok po kroku - pokazuje jak działają popularniejsze algorytmy sortujące.</p>
+
+<p class="is-size-7-touch">Mój nauczyciel ze szkoły powiedział  bym przypomniał sobie <em>wszystkie te sorty</em> do <strong>matury</strong> - tak też zrobiłem.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                Algorytmy sortujące
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">Haxe</span>
+                                
+                                <span class="tag is-white has-text-grey-light">HaxeFlixel</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Algorytmy</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Web</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="columns">
+                
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="Wstawiacz obrazków obrazek" src="/static/shubi.png">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="7" onmouseenter="activate_link('7')" onmouseleave="deactivate_link('7')" class="my-link-as-text" data-hidden-url="https://www.youtube.com/watch?v=bhxVHMn7Ieo" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong>Shubi</strong></p>
+
+<p class="is-size-7-touch">Program służy do pomocy w <em>reagowaniu</em>. Zamiast wysyłać na messengerze bądź discordzie emoji <i class="em em-kissing_smiling_eyes"></i> można wysłać zdjęcie pieska z wystawionym jęzorem.</p> 
+
+<p>Jest to projekt na zakończenie warsztatów Pythona w firmie <strong>Intel</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                Wstawiacz obrazków
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">Python</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Flask</span>
+                                
+                                <span class="tag is-white has-text-grey-light">SQLAlchemy</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Web</span>
+                                
+                                <span class="tag is-white has-text-grey-light">PyQt</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Babel</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="Kalkulator VLSM obrazek" src="/static/vlsm.png">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="8" onmouseenter="activate_link('8')" onmouseleave="deactivate_link('8')" class="my-link-as-text" data-hidden-url="https://github.com/Boberkraft/VLSM-sieci" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong>Dzieli sieć na podsieci</strong></p>
+
+<p class="is-size-7"> Program ten dzieli sieć wedle techniki VLSM <strong>+</strong> dodatkowo posiada przycisk do generowania pliku word, który ma służyć jako <strong>sprawdzian</strong> - odpowiedzi są dołączone.</p>
+
+<p class="is-size-7">Stworzone by dostać dobrą ocenę z przedmiotu <strong>Sieci komputerowe</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                Kalkulator VLSM
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">Python</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Tkinter</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Algorytmy</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="columns">
+                
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="To portfolio obrazek" src="/static/cv.png">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="16" onmouseenter="activate_link('16')" onmouseleave="deactivate_link('16')" class="my-link-as-text" data-hidden-url="https://github.com/Boberkraft/boberkraft.github.io" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong>Jednostronowa strona</strong></p>
+
+<p>Została wykonan przy pomocy <strong>Django</strong> i wdrażana przy pomocy prostego skryptu generującego statyczny html.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                To portfolio
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">Python</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Django</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Web</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+
+                <div class="column is-half has-text-centered ">
+                    <div class="card my-item-car my-hoverable">
+                        <div class="my-item">
+                            <div class="my-item-under-text" style="position:relative;">
+                                <a class="my-project">
+                                    <img alt="Strona restauracji obrazek" src="/static/kebab.png">
+                                </a>
+                                <div class="hidden-item">
+                                    <a id="17" onmouseenter="activate_link('17')" onmouseleave="deactivate_link('17')" class="my-link-as-text" data-hidden-url="https://github.com/Boberkraft/Strona-o-kebabie" target="_blank" rel="nofollow">
+                                        <div class="notification" style="height:100%;">
+                                            <div class="content my-has-text-centered">
+                                                <p><strong>Prosta strona o kebabowni (<strong>CMS</strong>)</strong></p>
+
+</p>Projekt specjalnie zawiera prostego <strong>SQLa</strong> oraz funkcje, gdyż służył jako przykład. Posiada system szablonów podobny do tych z <strong>Django</strong>.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                                Strona restauracji
+                            </h2></p>
+
+                            <p>
+                                
+                                <span class="tag is-white has-text-grey-light">PHP</span>
+                                
+                                <span class="tag is-white has-text-grey-light">CMS</span>
+                                
+                                <span class="tag is-white has-text-grey-light">SQL</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Web</span>
+                                
+                                <span class="tag is-white has-text-grey-light">Js</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="columns">
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hr">
+    <div class="container">
+        <hr> <!-- style="background-color:#ff3860;opacity:0.2;"-->
+    </div>
+</div>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="title is-2 has-text-centered">
+                    <strong> Witaj ponownie </strong> <i class="em em-raised_hand_with_fingers_splayed"></i>
+                </h1>
+                <p class="content is-medium">
+                    Zainteresowany współpracą? Śmiało pisz na
+
+                    <a class="my-red" href="mailto:andrzej.bisewski@gmail.com" target="_blank">andrzej.bisewski@gmail.com</a>,
+                    a zaraz do Ciebie odpiszę!
+                </p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer class="footer "> <!-- has-background-white -->
+    <div class="content has-text-centered has-text-dark">
+        <p>Copyrights © <strong>Andrzej Bisewski</strong> 2019
+
+    </div>
+</footer>
+
+
+
+
+<script src="/static/script.js">
+
+
+</script>
+
+</body>
+</html>
