@@ -13,11 +13,12 @@
                         ‍<i class="em em-writing_hand" style></i>
                     </span>
                 </h1>
-                <h3 class="subtitle is-3 has-text-justified has-text-weight-light">
-                    {% trans 'Z tej strony <strong>Andrzej</strong>, początkujący programista, który dodatkowo interesuje się samorozwojem i czystym kodem' %} <i class="em em-male-technologist"></i>
+                <h3 class="subtitle is-3 is-size-4-touch has-text-justified has-text-weight-light">
+                    {% trans 'Z tej strony <strong>Andrzej</strong>, początkujący programista, który dodatkowo interesuje się samorozwojem i czystym kodem.' %}
                 </h3>
+                <h1 class="subtitle is-3 has-text-centered"><i class="em em-male-technologist"></i></h1>
                 <h4 class="subtitle is-4 has-text-weight-light">
-                    {% trans 'Dodatkowo jestem również <strong>teleinformatykiem</strong>.' %}
+                    {% trans 'Dodatkowo jestem również <strong>Technikiem Teleinformatykiem</strong>.' %}
                 </h4>
                 <span class="icon">
                     <i class="fas fa-home"></i>
@@ -40,7 +41,92 @@
         <hr>
     </div>
 </div>
+<div class="container">
+    <div class="tile is-ancestor">
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <div class="content">
+                    <div class="has-text-centered">
+                        {% blocktrans %}
+                        <p class="title">Trochę o mnie</p>
+                        <p class="subtitle"><a class="my-red">Dlaczego takie języki?</a></p></div>
+                    <div class="content" style="margin-top:1rem;">
+                        <p>
 
+                            Wpierw korzystałem z <strong>PHP</strong>/<strong>Js</strong> w celu robienia
+                            pokazowych stron internatowych i interaktywnych aplikacji.
+                            Zacząłem od technologii webowych, gdyż są bardziej efektowne
+                            <i class="em em-astonished"></i> - potem przeniosłem się potem na <a class="my-red">backendowe</a>
+                            języki
+                            (<strong>Python</strong>, <strong>Haxe</strong>, <strong>C++</strong>, <strong>Common lisp</strong>) w
+                            celu nauki algorytmów. <i class="em em-male-student"></i></p>
+                        <p>Dzięki temu bez problemu jestem w stanie zrozumieć skomplikowaną rekurencję, generatory i
+                            metaprogramowanie. Jestem w stanie rozróżnić zły algorytm od dobrego -
+                            a także kiedy to nie ma znaczenia: wiem kiedy przestać optymalizować by nie przerodziło się
+                            to w <a class="my-red">przedwczesną mikroptymalizacje</a><i class="em em-exclamation"></i>
+                        </p>
+                        <p>
+                            Mam bardzo duże umiejętności wyszkukiwania informacji w internecie, a więc nie musi nademną
+                            cały czas
+                            ktoś stać - szanuję czas innych i swój <i class="em em-timer_clock"></i></p>
+                        <p>
+                            Jako że lubię elektronikę i jej się uczyłem, to <strong>C++</strong> używałem głównie do
+                            programowania <a class="my-red">arduino</a>: zrobiłem ładny <strong>zegar biarny</strong>,
+                            grę
+                            <strong>sajmon mówi</strong>, a także <strong>led strip</strong> sterowany muzyką z
+                            komputera.</p>
+                    </div>
+                    {% endblocktrans %}
+                </div>
+            </article>
+        </div>
+        <div class="tile is-vertical is-6">
+            <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <article class="tile is-child box">
+                        {% blocktrans %}
+                        <div class="has-text-centered">
+
+                            <p class="title">Dlaczego ja?</p>
+                            <p class="subtitle "><a class="my-red">Bo bardzo szybko i chętnie się uczę</a></p>
+                        </div>
+                        <div class="content" style="margin-top:1rem;">
+                            <p>Przez cały rozwój w technikum nie tylko ukończyłem klasę z <strong>wyróżnieniem</strong>
+                                (jako jedna z 2
+                                osób), to dodatkowo równolegle samodzielnie rozwijałem się w kierunku programowania,
+                                gdyż bardzo lubię tak spędzać czas – jest to moja <strong>wielka <a
+                                        class="my-red">pasja</a></strong>, przy której mogę spędzać wiele
+                                godzin.</p>
+                        </div>
+                        {% endblocktrans %}
+                    </article>
+                    <article class="tile is-child box">
+                        {% blocktrans %}
+                        <div class="has-text-centered">
+                            <p class="title">Celuję w <strong class="my-red"><a class="my-red">rozwój</a></strong>.</p>
+                            <p class="subtitle">Czytam różne artykuły i książki o <a class="my-red">kodowaniu</a> i
+                                <strong>algorytmice</strong></p></div>
+                        <div class="content" style="margin-top:1rem;">
+                            <p>Jestem samoukiem który samodzielnie nauczyłem się programować z pomocą internetu. Upartym samoukiem -
+                                <strong>Haxe 3</strong> nauczyłem się bez
+                                żadnych poradników na YouTube, badź książek (bo ich nie ma). Podobnie jest z mało
+                                popularnym <strong>Common Lisp</strong>em, którego uczę się w celach polepszenia mojego
+                                sposobu myślenia i kodowania.</p>
+                        <p>Przeczytałem <strong>Czysty kod</strong> Wójka Boba i inne książki.</p></div>
+                        {% endblocktrans %}
+                    </article>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+<div class="hr">
+<div class="container">
+    <hr>
+</div>
 <section class="hero">
     <div class="hero-body">
         <div class="container">
@@ -49,15 +135,15 @@
                 <span class="my-shadow">{% trans 'Korzystałem z tych technologii' %}</span>
             </h2>
 
-            <div>
+            <div class="has-text-centered">
                 {% with 'python numpy django haxe css-html js lisp emacs unity labview cpp arduino ps linux github' as list %}
 
-                    {% for tech in list.split %}
-                    <div class="technology-icon">
-                        <img class="image " src="/static/{{ tech }}.png" alt="obrazek {{ tech }}" width="144"
-                             height="95">
-                    </div>
-                    {% endfor %}
+                {% for tech in list.split %}
+                <div class="technology-icon">
+                    <img class="image " src="/static/{{ tech }}.png" alt="obrazek {{ tech }}" width="144"
+                         height="95">
+                </div>
+                {% endfor %}
                 {% endwith %}
 
             </div>
@@ -84,10 +170,13 @@
                         <div class="my-item">
                             <div class="my-item-under-text" style="position:relative;">
                                 <a class="my-project">
-                                    <img alt="{{ object.title|get_translation }} {% trans 'obrazek' %}" src="/static/{{ object.image|get_image }}">
+                                    <img alt="{{ object.title|get_translation }} {% trans 'obrazek' %}"
+                                         src="/static/{{ object.image|get_image }}">
                                 </a>
                                 <div class="hidden-item">
-                                    <a id="{{ object.id }}" onmouseenter="activate_link('{{ object.id }}')" onmouseleave="deactivate_link('{{ object.id }}')" class="my-link-as-text" data-hidden-url="{{ object.url }}" target="_blank" rel="nofollow">
+                                    <a id="{{ object.id }}" onmouseenter="activate_link('{{ object.id }}')"
+                                       onmouseleave="deactivate_link('{{ object.id }}')" class="my-link-as-text"
+                                       data-hidden-url="{{ object.url }}" target="_blank" rel="nofollow">
                                         <div class="notification" style="height:100%;">
                                             <div class="content my-has-text-centered">
                                                 {{ object.description|get_translation|safe }}
@@ -96,7 +185,8 @@
                                     </a>
                                 </div>
                             </div>
-                           <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
+                            <p>
+                            <h2 class="title is-4 " style="margin-bottom:0.3rem;">
                                 {{ object.title|get_translation }}
                             </h2></p>
 
@@ -131,7 +221,8 @@
         <div class="columns">
             <div class="column is-half is-offset-one-quarter">
                 <h1 class="title is-2 has-text-centered">
-                    <strong> {% trans 'Witaj ponownie' %} </strong> <i class="em em-raised_hand_with_fingers_splayed"></i>
+                    <strong> {% trans 'Witaj ponownie' %} </strong> <i
+                        class="em em-raised_hand_with_fingers_splayed"></i>
                 </h1>
                 <p class="content is-medium">
                     {% trans 'Zainteresowany współpracą? Śmiało pisz na ' %}
