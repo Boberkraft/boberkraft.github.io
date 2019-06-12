@@ -21,14 +21,16 @@ from django.conf.urls.static import static
 
 from pages.views import home_view
 
+from django.conf.urls.i18n import i18n_patterns
 print(staticfiles_urlpatterns())
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_view),
-
-
 ]
+
+urlpatterns += i18n_patterns(
+    path('', home_view),
+)
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

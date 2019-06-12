@@ -6,13 +6,7 @@
 }
 
 
-let first_word = ['młodszego', 'junior', 'web',  'backend'];
-let second_word = ['developera?', 'deva?'];
-
-let words = ['programistę python3?',
-'młodszego programistę?', 'lisp juniora?',
-'ktogoś z aspiracjami?', 'początkującego programiste?'];
-
+//words in <head>
 let total_combinations = first_word.length + second_word.length * words.length;
 
 
