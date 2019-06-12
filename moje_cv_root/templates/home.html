@@ -84,25 +84,25 @@
                         <div class="my-item">
                             <div class="my-item-under-text" style="position:relative;">
                                 <a class="my-project">
-                                    <img alt="{{ object.title }} obrazek" src="/static/{{ object.image|get_image }}">
+                                    <img alt="{{ object.title|get_translation }} {% trans 'obrazek' %}" src="/static/{{ object.image|get_image }}">
                                 </a>
                                 <div class="hidden-item">
                                     <a id="{{ object.id }}" onmouseenter="activate_link('{{ object.id }}')" onmouseleave="deactivate_link('{{ object.id }}')" class="my-link-as-text" data-hidden-url="{{ object.url }}" target="_blank" rel="nofollow">
                                         <div class="notification" style="height:100%;">
                                             <div class="content my-has-text-centered">
-                                                {{ object.description|safe }}
+                                                {{ object.description|get_translation|safe }}
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                            <p> <h2 class="title is-4 " style="margin-bottom:0.3rem;">
-                                {{ object.title }}
+                                {{ object.title|get_translation }}
                             </h2></p>
 
                             <p>
                                 {% for tech in object|get_stack %}
-                                <span class="tag is-white has-text-grey-light">{{ tech }}</span>
+                                <span class="tag is-white has-text-grey-light">{{ tech|get_translation }}</span>
                                 {% endfor %}
                             </p>
                         </div>

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-12 11:52+0200\n"
-"PO-Revision-Date: 2019-06-12 11:51+0200\n"
+"POT-Creation-Date: 2019-06-12 14:07+0200\n"
+"PO-Revision-Date: 2019-06-12 14:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: .\templates\base.html:12 .\templates\base.html:21
 msgid "Programista dopiero zaczynający swoją karierę."
-msgstr "xxxx."
+msgstr "Young programmer at the beggining of his career."
 
 #: .\templates\base.html:32
 msgid "let first_word =  ['młodszego', 'junior', 'web',  'backend']"
-msgstr "let first_word =  ['junior', 'web',  'backend']"
+msgstr "let first_word =  ['a junior', 'a web',  'a backend']"
 
 #: .\templates\base.html:33
 msgid "let second_word = ['developera?']"
@@ -35,14 +35,10 @@ msgid ""
 "let words = ['programistę python3?', 'młodszego programistę?', 'lisp "
 "juniora?', 'ktogoś z aspiracjami?', 'początkującego programiste?']"
 msgstr ""
-"let words = ['python 3 programmer?', 'junior developer?', 'lisp junior?', "
-"'someone ambitious?', 'novice programmer?']"
+"let words = ['a python 3 programmer?', 'a junior developer?', 'a lisp "
+"junior?', 'someone ambitious?', 'a novice programmer?']"
 
-#: .\templates\base.html:36
-msgid "XD"
-msgstr "HEJHEJ"
-
-#: .\templates\base.html:61
+#: .\templates\base.html:66
 msgid "Poszukujesz"
 msgstr "Are you looking for"
 
@@ -66,14 +62,21 @@ msgstr "Contact"
 msgid "Korzystałem z tych technologii"
 msgstr "Stack"
 
-#: .\templates\home.html:133
+#: .\templates\home.html:87
+msgid "obrazek"
+msgstr "image"
+
+#: .\templates\home.html:134
 msgid "Witaj ponownie"
 msgstr "Hello again"
 
-#: .\templates\home.html:136
+#: .\templates\home.html:137
 msgid "Zainteresowany współpracą? Śmiało pisz na "
 msgstr "Interested? Go on and let me know at "
 
-#: .\templates\home.html:139
+#: .\templates\home.html:140
 msgid "a zaraz do Ciebie odpiszę!"
 msgstr "and I will respond as fast as i can!"
+
+#~ msgid "XD"
+#~ msgstr "HEJHEJ"
