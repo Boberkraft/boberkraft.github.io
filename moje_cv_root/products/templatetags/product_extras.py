@@ -32,7 +32,6 @@ def get_translation(text):
     stack = 0
     end = None
     for i, letter in enumerate(text[start:]):
-        print(letter)
         if letter == '{':
             stack += 1
         if letter == "}":
