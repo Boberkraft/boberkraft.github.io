@@ -9,7 +9,7 @@ def home_view(request):
 
     context = {
         'objects': objects,
-        'cv_link': "cv-{}-Andrzej-Bisewski.pdf".format(translation.get_language()),
+        'cv_link': "cv-{}-Andrzej-Bisewski-n.pdf".format(translation.get_language()),
         'default_language': settings.LANGUAGE_CODE,
     }
     return render(request, 'home.html', context)
